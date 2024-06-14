@@ -53,13 +53,8 @@ section {
     margin-bottom: 40px;
 }
 
-footer {
-    background-color: #3E373D;
-    text-align: center;
-    padding: 10px;
-    position: relative;
-    width: 100%;
-    border-top: 2px solid #C9A181;
+.promociones {
+    text-align: center; /* Centrar el contenido dentro de la sección */
 }
 
 .slider {
@@ -72,11 +67,13 @@ footer {
 .slide {
     display: none;
     width: 100%;
+    text-align: center; /* Centrar la imagen horizontalmente */
 }
 
 .slide img {
-    width: 100%;
-    height: auto;
+    width: auto; /* Cambiar el ancho a automático */
+    height: 300px; /* Altura fija para que las imágenes se vean cuadradas */
+    object-fit: cover; /* Para que las imágenes se ajusten y no se deformen */
 }
 
 button.prev, button.next {
@@ -89,6 +86,7 @@ button.prev, button.next {
     cursor: pointer;
     padding: 10px;
     font-size: 18px;
+    z-index: 1; /* Asegura que estén encima del slider */
 }
 
 button.prev {
@@ -97,6 +95,15 @@ button.prev {
 
 button.next {
     right: 10px;
+}
+
+footer {
+    background-color: #3E373D;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    border-top: 2px solid #C9A181;
 }
 
 a {
