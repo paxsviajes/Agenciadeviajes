@@ -9,9 +9,9 @@ const mobileImages = [
 
 // Define las imágenes para computadoras con enlace en la primera imagen
 const desktopImages = [
-    'Diseño%sin%título.png',
-    'Diseño%sin%título.png',
-    'Diseño%sin%título.png'
+    'Diseño sin título.png',
+    'imagen2-desktop.jpg',
+    'imagen3-desktop.jpg'
 ];
 
 // Función para cargar imágenes en el slider según el tamaño de la pantalla
