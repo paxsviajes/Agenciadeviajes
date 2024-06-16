@@ -103,13 +103,13 @@ button.next {
 @media (min-width: 768px) {
     /* Ajuste de estilos para tabletas y escritorios */
     .slide img {
-        height: 400px; /* Aumentar tamaño de las imágenes en tabletas y escritorios */
+        height: 400px;
     }
 }
 
 @media (min-width: 1024px) {
     /* Ajuste de estilos para pantallas grandes */
     .slide img {
-        height: 500px; /* Aumentar tamaño de las imágenes en pantallas grandes */
+        height: 500px;
     }
 }
