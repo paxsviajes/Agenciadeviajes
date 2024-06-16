@@ -7,9 +7,9 @@ const mobileImages = [
     'imagen3-mobile.jpg'
 ];
 
-// Define las imágenes para computadoras
+// Define las imágenes para computadoras con enlace en la primera imagen
 const desktopImages = [
-    'imagen1-desktop.jpg',
+    'Diseño sin título.png',
     'imagen2-desktop.jpg',
     'imagen3-desktop.jpg'
 ];
@@ -28,10 +28,14 @@ function loadImages() {
         });
     } else {
         // Cargar imágenes para computadoras
-        desktopImages.forEach(image => {
+        desktopImages.forEach((image, index) => {
             const slide = document.createElement('div');
             slide.classList.add('slide');
-            slide.innerHTML = `<img src="${image}" alt="Promoción">`;
+            if (index === 0) {
+                slide.innerHTML = `<a href="https://example.com"><img src="${image}" alt="Promoción"></a>`;
+            } else {
+                slide.innerHTML = `<img src="${image}" alt="Promoción">`;
+            }
             slider.appendChild(slide);
         });
     }
