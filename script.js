@@ -1,5 +1,5 @@
 // JavaScript para cargar y cambiar imágenes dinámicamente en el slider
-
+https://github.com/paxsviajes/Agenciadeviajes/edit/main/script.js
 // Define las imágenes para dispositivos móviles
 const mobileImages = [
     'imagen1-mobile.jpg',
@@ -9,7 +9,7 @@ const mobileImages = [
 
 // Define las imágenes para computadoras con enlace en la primera imagen
 const desktopImages = [
-    'Diseño sin título.png',
+    'Prueba.png',
     'imagen2-desktop.jpg',
     'imagen3-desktop.jpg'
 ];
@@ -32,7 +32,7 @@ function loadImages() {
             const slide = document.createElement('div');
             slide.classList.add('slide');
             if (index === 0) {
-                slide.innerHTML = `<a href="https://example.com"><img src="${image}" alt="Promoción"></a>`;
+                slide.innerHTML = `<a href="Prueba.png"><img src="${image}" alt="Promoción"></a>`;
             } else {
                 slide.innerHTML = `<img src="${image}" alt="Promoción">`;
             }
