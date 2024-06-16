@@ -107,7 +107,7 @@ button.next {
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1080px) {
     /* Ajuste de estilos para pantallas grandes */
     .slide img {
         height: 500px;
