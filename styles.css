@@ -1,3 +1,4 @@
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -44,19 +45,20 @@ main {
     padding: 20px;
 }
 
-.principal img {
-    width: 100%;
-    height: auto;
-}
-
+/* Estilos para secciones */
 section {
     margin-bottom: 40px;
 }
 
-.promociones {
-    text-align: center; /* Centrar el contenido dentro de la sección */
+#promociones {
+    text-align: center;
 }
 
+#promociones h2 {
+    margin-bottom: 20px;
+}
+
+/* Slider de promociones */
 .slider {
     position: relative;
     width: 100%;
@@ -67,13 +69,13 @@ section {
 .slide {
     display: none;
     width: 100%;
-    text-align: center; /* Centrar la imagen horizontalmente */
+    text-align: center;
 }
 
 .slide img {
-    width: auto; /* Cambiar el ancho a automático */
-    height: 300px; /* Altura fija para que las imágenes se vean cuadradas */
-    object-fit: cover; /* Para que las imágenes se ajusten y no se deformen */
+    width: auto;
+    height: 300px;
+    object-fit: cover;
 }
 
 button.prev, button.next {
@@ -86,7 +88,7 @@ button.prev, button.next {
     cursor: pointer;
     padding: 10px;
     font-size: 18px;
-    z-index: 1; /* Asegura que estén encima del slider */
+    z-index: 1;
 }
 
 button.prev {
@@ -97,15 +99,17 @@ button.next {
     right: 10px;
 }
 
-footer {
-    background-color: #3E373D;
-    text-align: center;
-    padding: 10px;
-    position: relative;
-    width: 100%;
-    border-top: 2px solid #C9A181;
+/* Estilos responsivos */
+@media (min-width: 768px) {
+    /* Ajuste de estilos para tabletas y escritorios */
+    .slide img {
+        height: 400px; /* Aumentar tamaño de las imágenes en tabletas y escritorios */
+    }
 }
 
-a {
-    color: #C9A181;
+@media (min-width: 1024px) {
+    /* Ajuste de estilos para pantallas grandes */
+    .slide img {
+        height: 500px; /* Aumentar tamaño de las imágenes en pantallas grandes */
+    }
 }
