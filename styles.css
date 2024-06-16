@@ -55,7 +55,7 @@ section {
 }
 
 #promociones h2 {
-    margin-bottom: 20px;
+    margin-bottom: 100px;
 }
 
 /* Slider de promociones */
@@ -107,7 +107,7 @@ button.next {
     }
 }
 
-@media (min-width: 1080px) {
+@media (min-width: 1024px) {
     /* Ajuste de estilos para pantallas grandes */
     .slide img {
         height: 500px;
